@@ -1,0 +1,1018 @@
+$color1:white;
+$color2:gold;
+$color3:blue;
+$color4: black;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// Sección Index --- INICIO//
+
+.containerindex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 80vh;
+    background-image: url(imagenes//buqueindex.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    border: $color4 2px solid;
+
+    .containerindex__tituloIndex {
+        color: $color1;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 6px #000;
+        animation-duration: 2s;
+        animation-name: aparecer;
+
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+    }
+
+    .containerindex__textoindex {
+        color: $color1;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 6px #000;
+    }
+}
+
+.carousel-inner2 {
+    width: 100%;
+    height: 40vh;
+}
+
+.imagen1 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(imagenes/nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .aside__motivacion {
+        color: $color1;
+        font-size: 40px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    span {
+        color: $color2
+    }
+}
+
+.imagen2 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(imagenes/buqueindex.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .aside__motivacion {
+        color: $color1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 40px;
+        text-align: center;
+
+        span {
+            color: $color2
+        }
+    }
+}
+
+.imagen3 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(imagenes/mar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aside__motivacion {
+    color: $color1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    text-align: center;
+
+    span {
+        color: $color2
+    }
+}
+
+// // Sección Index --- CIERRE//
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: $color1;
+    font-weight: bold;
+    background-color: $color4;
+    width: 100%;
+    height: 15vh;
+
+    .titulofooter {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color1;
+    }
+
+    .redesFooter {
+        background-color: white;
+    }
+}
+
+
+
+
+// Sección Nosotros --- INICIO//
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 80vh;
+    background-image: url(imagenes//nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    border: $color4 2px solid;
+
+    .nosotros__titulo-nosotros {
+        color: $color1;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 45px;
+        font-weight: bold;
+        margin-top: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 6px #000;
+        animation-duration: 2s;
+        animation-name: aparecer;
+
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    .nosotros__info-nosotros {
+        color: $color1;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 6px #000;
+    }
+}
+
+.cards {
+    background-color: $color4;
+
+    .cards__card1 {
+        color: gold;
+        background-color: gray;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 20px;
+        overflow: hidden;
+
+        .sub {
+            color: $color1;
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+
+.reconocimientos {
+    color: $color1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px #000;
+    background-color: $color4;
+}
+
+.oficinas {
+    width: 100%;
+    height: 40vh;
+    background-color: $color1;
+
+    h3 {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        color: $color1;
+        background-color: $color4;
+        font-family: 'Ultra', serif;
+        text-transform: uppercase;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .oficinas__arg {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color: royalblue;
+        width: 100%;
+        height: 120px;
+        margin-bottom: 10px;
+
+        .titulosofi {
+            color: $color4;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: $color1;
+        }
+
+        .emails {
+            text-decoration: none;
+            color: $color1;
+            font-size: 20px;
+        }
+    }
+}
+
+// Sección Nosotros --- CIERRE//
+
+// // Sección Servicios --- INICIO//
+
+.container-servicios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 50vh;
+    background-image: url(imagenes//containers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    border: $color4 2px solid;
+
+    .container-servicios__titulo-servicios {
+        color: $color1;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 45px;
+        font-weight: bold;
+        margin-top: 110px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 6px #000;
+        animation-duration: 2s;
+        animation-name: aparecer;
+
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+    }
+
+    .container-servicios__info-servicios {
+        color: $color1;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 6px #000;
+    }
+}
+
+.seccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 35vh;
+    // background-color: red;
+    margin-bottom: 3em;
+
+    .seccion__logistica {
+        background-color: white;
+        border-right: black 1px solid;
+
+        .title-logistica {
+            color: $color1;
+            font-family: 'Ultra', serif;
+            background-color: black;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 20px;
+            // margin-bottom: 20px;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+
+        .texto-logistica {
+            color: rgb(46, 46, 46);
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+    .seccion__cliente {
+        background-color: white;
+
+        .title-cliente {
+            color: $color1;
+            font-family: 'Ultra', serif;
+            background-color: black;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 20px;
+            // margin-bottom: 20px;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+
+        .texto-cliente {
+            color: rgb(46, 46, 46);
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+
+// CIERRE SECCION -- SERVICIOS --//
+
+// INICIO SECCION -- CONTACTO --//
+
+
+
+
+// CIERRE SECCION -- CONTACTO --//
+
+
+.container-contacto {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-bottom: $color1 3px solid;
+    // align-items: center;
+
+    .container-contacto__contactoTitulo {
+        color:white;
+        font-size: 40px;
+        margin-top: 100px;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+    }
+    .datos{
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        text-transform: uppercase;
+
+    }
+    .consulta{
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+        text-transform: uppercase;
+        .formconsulta{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+    .terminos{
+        text-align: center;
+        margin-top: 15px;
+        color: white;
+        text-transform: uppercase;
+        margin-right: 45px;
+    }
+
+}
+
+// SECCION INICIO SESION- INICIO//
+
+.sesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagenes/mar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .sesion__iniciarsesion {
+        text-align: center;
+        color: $color1;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .formuinicio__email {
+        color: $color1;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+
+//Media Querys -- INICIO//
+
+@media only screen and (min-width: 360px) {
+    .containerindex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-image: url(imagenes//buqueindex.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        border: $color4 2px solid;
+
+        .containerindex__tituloIndex {
+            color: $color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 110px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px #000;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+    }
+
+
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-image: url(imagenes//nosotros.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        border: $color4 2px solid;
+
+        .nosotros__titulo-nosotros {
+            color: $color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 110px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px #000;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+
+
+        .nosotros__info-nosotros {
+            color: $color1;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 6px #000;
+        }
+    }
+
+    .cards {
+        background-color: $color4;
+
+        .cards__card1 {
+            display: flex;
+            flex-direction: column;
+            color: gold;
+            background-color: gray;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 20px;
+
+            .sub {
+                color: red;
+                text-decoration: underline;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+
+    .oficinas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: auto;
+
+        .oficinas__arg {
+            align-items: center;
+            background-color: red;
+        }
+
+        .titulosofi {
+            margin-top: 30px;
+        }
+
+        .maps {
+            display: none;
+        }
+    }
+
+
+    .container-servicios {
+        display: flex;
+        flex-direction: column;
+        background-image: url(imagenes//containers.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        margin-top: 50px;
+        border: none;
+
+        &__titulo-servicios {
+            color: $color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px #000;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+
+        &__info-servicios {
+            padding-bottom: 1em;
+        }
+    }
+
+    .seccion {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: red;
+
+        .seccion__logistica {
+            border-right: black 1px solid;
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+
+            .title-logistica {
+                color: $color1;
+                font-family: 'Ultra', serif;
+                background-color: black;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                animation-duration: 2s;
+                animation-name: aparecer;
+
+                @keyframes aparecer {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1
+                    }
+                }
+            }
+
+            .texto-logistica {
+                color: rgb(46, 46, 46);
+                text-align: center;
+                font-size: 18px;
+            }
+
+        }
+
+        .seccion__cliente {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+
+            .title-cliente {
+                color: $color1;
+                font-family: 'Ultra', serif;
+                background-color: black;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                animation-duration: 2s;
+                animation-name: aparecer;
+
+                @keyframes aparecer {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+
+        .titulofooter {
+            margin-top: 10px;
+        }
+
+        .redesFooter {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .containerindex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-image: url(imagenes//buqueindex.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        border: $color4 2px solid;
+
+        .containerindex__tituloIndex {
+            color: $color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 110px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px #000;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+    }
+
+
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-image: url(imagenes//nosotros.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        border: $color4 2px solid;
+
+        .nosotros__titulo-nosotros {
+            color: $color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 110px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px #000;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+
+
+        .nosotros__info-nosotros {
+            color: $color1;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 6px #000;
+        }
+    }
+
+    .cards {
+        background-color: $color4;
+
+        .cards__card1 {
+            display: flex;
+            flex-direction: column;
+            color: gold;
+            background-color: gray;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 20px;
+
+            .sub {
+                color: red;
+                text-decoration: underline;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+
+    .oficinas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: auto;
+
+        .oficinas__arg {
+            align-items: center;
+            background-color: yellow;
+        }
+
+        .titulosofi {
+            margin-top: 30px;
+        }
+
+        .maps {
+            display: none;
+        }
+    }
+
+
+    .container-servicios {
+        display: flex;
+        flex-direction: column;
+        background-image: url(imagenes//containers.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        margin-top: 50px;
+        border: none;
+
+        &__titulo-servicios {
+            color: $color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px #000;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+
+        &__info-servicios {
+            padding-bottom: 1em;
+        }
+    }
+
+    .seccion {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: red;
+
+        .seccion__logistica {
+            border-right: black 1px solid;
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+
+            .title-logistica {
+                color: $color1;
+                font-family: 'Ultra', serif;
+                background-color: black;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                animation-duration: 2s;
+                animation-name: aparecer;
+
+                @keyframes aparecer {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1
+                    }
+                }
+            }
+
+            .texto-logistica {
+                color: rgb(46, 46, 46);
+                text-align: center;
+                font-size: 18px;
+            }
+
+        }
+
+        .seccion__cliente {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+
+            .title-cliente {
+                color: $color1;
+                font-family: 'Ultra', serif;
+                background-color: black;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                animation-duration: 2s;
+                animation-name: aparecer;
+
+                @keyframes aparecer {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+
+        .titulofooter {
+            margin-top: 10px;
+        }
+
+        .redesFooter {
+            margin-bottom: 10px;
+        }
+    }
+}
+// //Media Querys -- Nosotros -- CIERRE//
