@@ -54,9 +54,10 @@ $color4: black;
         font-weight: bold;
         text-align: center;
         text-shadow: 2px 2px 6px #000;
-    }
-    .texto-indexcelu{
-        display: none;
+
+        span {
+            color: $color2;
+        }
     }
 }
 
@@ -89,7 +90,7 @@ $color4: black;
 .imagen2 {
     width: 100%;
     height: 40vh;
-    background-image: url(imagenes/buqueindex.jpg);
+    background-image: url(imagenes/impo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,27 +109,6 @@ $color4: black;
     }
 }
 
-.imagen3 {
-    width: 100%;
-    height: 40vh;
-    background-image: url(imagenes/mar.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.aside__motivacion {
-    color: $color1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 40px;
-    text-align: center;
-
-    span {
-        color: $color2
-    }
-}
 
 // // Sección Index --- CIERRE//
 
@@ -203,6 +183,10 @@ $color4: black;
         font-weight: bold;
         text-align: center;
         text-shadow: 2px 2px 6px #000;
+
+        span {
+            color: $color2;
+        }
     }
 }
 
@@ -228,14 +212,17 @@ $color4: black;
 }
 
 .reconocimientos {
+    display: flex;
+    width: 100%;
+    height: 80px;
     color: $color1;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 6px #000;
     background-color: $color4;
+    font-family: 'Ultra', serif;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .oficinas {
@@ -287,28 +274,27 @@ $color4: black;
 
 // // Sección Servicios --- INICIO//
 
-.container-servicios {
+.containerServicios {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 50vh;
     background-image: url(imagenes//containers.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
-    border: $color4 2px solid;
+    width: 100%;
+    height: 50vh;
 
-    .container-servicios__titulo-servicios {
+
+    .containerServicios__titulo-servicios {
         color: $color1;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 45px;
         font-weight: bold;
-        margin-top: 110px;
         text-align: center;
         text-transform: uppercase;
         text-shadow: 2px 2px 6px #000;
+        margin-top: 100px;
         animation-duration: 2s;
         animation-name: aparecer;
 
@@ -322,31 +308,17 @@ $color4: black;
             }
         }
     }
-
-    .container-servicios__info-servicios {
-        color: $color1;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin-top: 20px;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        text-shadow: 2px 2px 6px #000;
-    }
 }
 
 .seccion {
-    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 35vh;
-    // background-color: red;
-    margin-bottom: 3em;
+    flex-wrap: wrap;
+
 
     .seccion__logistica {
-        background-color: white;
         border-right: black 1px solid;
+        width: auto;
+        height: 30vh;
 
         .title-logistica {
             color: $color1;
@@ -357,7 +329,7 @@ $color4: black;
             text-align: center;
             text-transform: uppercase;
             margin-top: 20px;
-            // margin-bottom: 20px;
+            margin-bottom: 20px;
             animation-duration: 2s;
             animation-name: aparecer;
 
@@ -381,6 +353,9 @@ $color4: black;
 
     .seccion__cliente {
         background-color: white;
+        width: auto;
+        height: 30vh;
+
 
         .title-cliente {
             color: $color1;
@@ -391,19 +366,9 @@ $color4: black;
             text-align: center;
             text-transform: uppercase;
             margin-top: 20px;
-            // margin-bottom: 20px;
+            margin-bottom: 20px;
             animation-duration: 2s;
             animation-name: aparecer;
-
-            @keyframes aparecer {
-                0% {
-                    opacity: 0;
-                }
-
-                100% {
-                    opacity: 1
-                }
-            }
         }
 
         .texto-cliente {
@@ -414,14 +379,10 @@ $color4: black;
     }
 }
 
+
 // CIERRE SECCION -- SERVICIOS --//
 
 // INICIO SECCION -- CONTACTO --//
-
-
-
-
-// CIERRE SECCION -- CONTACTO --//
 
 
 .container-contacto {
@@ -436,31 +397,35 @@ $color4: black;
     // align-items: center;
 
     .container-contacto__contactoTitulo {
-        color:white;
+        color: white;
         font-size: 40px;
         margin-top: 100px;
         justify-content: center;
         text-align: center;
         font-weight: bold;
     }
-    .datos{
+
+    .datos {
         color: white;
         text-align: center;
         margin-top: 20px;
         text-transform: uppercase;
 
     }
-    .consulta{
+
+    .consulta {
         text-align: center;
         color: white;
         margin-top: 20px;
         text-transform: uppercase;
-        .formconsulta{
+
+        .formconsulta {
             text-align: center;
             margin-bottom: 15px;
         }
     }
-    .terminos{
+
+    .terminos {
         text-align: center;
         margin-top: 15px;
         color: white;
@@ -469,6 +434,9 @@ $color4: black;
     }
 
 }
+
+// CIERRE SECCION -- CONTACTO --//
+
 
 // SECCION INICIO SESION- INICIO//
 
@@ -537,9 +505,58 @@ $color4: black;
                     opacity: 1
                 }
             }
-    }
+        }
     }
 
+    .carousel-inner2 {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .imagen1 {
+        width: 100%;
+        height: 40vh;
+        background-image: url(imagenes/nosotros.jpg);
+        background-position: center;
+        background-size: cover;
+
+        .aside__motivacion {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            margin-left: -140px;
+            margin-top: -100px;
+            color: $color1;
+            font-size: 40px;
+        }
+
+        span {
+            color: $color2
+        }
+    }
+
+    .imagen2 {
+        width: 100%;
+        height: 40vh;
+        background-image: url(imagenes/impo.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .aside__motivacion {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            margin-left: -60px;
+            margin-top: -130px;
+            color: $color1;
+            font-size: 40px;
+        }
+    }
 
 
     .nosotros {
@@ -602,7 +619,7 @@ $color4: black;
             font-size: 20px;
 
             .sub {
-                color: red;
+                color: $color1;
                 text-decoration: underline;
                 text-transform: uppercase;
                 text-align: center;
@@ -619,7 +636,7 @@ $color4: black;
 
         .oficinas__arg {
             align-items: center;
-            background-color: red;
+            background-color: royalblue;
         }
 
         .titulosofi {
@@ -631,8 +648,7 @@ $color4: black;
         }
     }
 
-
-    .container-servicios {
+    .containerServicios {
         display: flex;
         flex-direction: column;
         background-image: url(imagenes//containers.jpg);
@@ -640,10 +656,11 @@ $color4: black;
         background-position: center;
         background-repeat: no-repeat;
         justify-content: center;
-        margin-top: 50px;
-        border: none;
+        width: 100%;
+        height: 80vh;
 
-        &__titulo-servicios {
+
+        .containerServicios__titulo-servicios {
             color: $color1;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 45px;
@@ -651,6 +668,7 @@ $color4: black;
             text-align: center;
             text-transform: uppercase;
             text-shadow: 2px 2px 6px #000;
+            margin-top: 80px;
             animation-duration: 2s;
             animation-name: aparecer;
 
@@ -665,22 +683,32 @@ $color4: black;
             }
         }
 
-        &__info-servicios {
-            padding-bottom: 1em;
+        .containerServicios__info-servicios {
+            color: $color1;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 6px #000;
+
+            span {
+                color: $color2;
+            }
         }
     }
 
     .seccion {
         flex-direction: column;
-        flex-wrap: nowrap;
-        background-color: red;
+        flex-wrap: wrap;
+
 
         .seccion__logistica {
+            background-color: royalblue;
             border-right: black 1px solid;
             display: flex;
             flex-direction: column;
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 60vh;
 
             .title-logistica {
                 color: $color1;
@@ -707,17 +735,20 @@ $color4: black;
             }
 
             .texto-logistica {
-                color: rgb(46, 46, 46);
+                color: $color1;
                 text-align: center;
                 font-size: 18px;
+                font-weight: bold;
             }
 
         }
 
         .seccion__cliente {
-            background-color: white;
+            background-color: royalblue;
             display: flex;
             flex-direction: column;
+            width: 100%;
+            height: 60vh;
 
             .title-cliente {
                 color: $color1;
@@ -742,22 +773,74 @@ $color4: black;
                     }
                 }
             }
+
+            .texto-cliente {
+                color: $color1;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+            }
         }
     }
 
-    .footer {
+
+
+    .containerContacto {
+        background-color: royalblue;
+        height: 100vh;
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        border-bottom: $color1 3px solid;
 
-        .titulofooter {
-            margin-top: 10px;
+        .registro {
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .registro__datos {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: $color1;
+                text-align: center;
+                text-transform: uppercase;
+                width: 50%;
+                align-items: center;
+            }
         }
 
-        .redesFooter {
-            margin-bottom: 10px;
+        .consulta {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            text-align: center;
+            color: $color1;
+            font-family: 'Ultra', serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-top: 18px;
         }
+
+
+            .formconsulta {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+
+        .textarea {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-transform: lowercase;
+        }
+
     }
 }
 
@@ -858,39 +941,12 @@ $color4: black;
             text-transform: uppercase;
             text-align: center;
             font-size: 20px;
-
-            .sub {
-                color: red;
-                text-decoration: underline;
-                text-transform: uppercase;
-                text-align: center;
-            }
-        }
-    }
-
-    .oficinas {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 100%;
-        height: auto;
-
-        .oficinas__arg {
-            align-items: center;
-            background-color: yellow;
-        }
-
-        .titulosofi {
-            margin-top: 30px;
-        }
-
-        .maps {
-            display: none;
         }
     }
 
 
-    .container-servicios {
+
+    .containerServicios {
         display: flex;
         flex-direction: column;
         background-image: url(imagenes//containers.jpg);
@@ -898,14 +954,165 @@ $color4: black;
         background-position: center;
         background-repeat: no-repeat;
         justify-content: center;
-        margin-top: 50px;
-        border: none;
+        width: 100%;
+        height: 50vh;
 
-        &__titulo-servicios {
+
+        .containerServicios__titulo-servicios {
             color: $color1;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 45px;
             font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px #000;
+            margin-top: 100px;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+
+        .containerServicios__info-servicios {
+            color: $color1;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 6px #000;
+        }
+    }
+
+
+    .seccion {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+
+        .seccion__logistica {
+            border-right: black 1px solid;
+            width: 100%;
+            height: 200px;
+
+            .title-logistica {
+                color: $color1;
+                font-family: 'Ultra', serif;
+                background-color: black;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                animation-duration: 2s;
+                animation-name: aparecer;
+
+
+                .texto-logistica {
+                    color: rgb(46, 46, 46);
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .seccion__cliente {
+            border-right: black 1px solid;
+            width: 100%;
+            height: 200px;
+
+            .title-cliente {
+                color: $color1;
+                font-family: 'Ultra', serif;
+                background-color: black;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                // margin-top: 20px;
+                margin-bottom: 20px;
+                animation-duration: 2s;
+                animation-name: aparecer;
+            }
+
+            .texto-cliente {
+                color: $color1;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: -15px;
+            }
+        }
+    }
+}
+
+// //Media Querys -- Nosotros -- CIERRE//
+
+@media only screen and (min-width: 1200px) {
+    .containerindex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-image: url(imagenes//buqueindex.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        border: $color4 2px solid;
+
+        .containerindex__tituloIndex {
+            color: $color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 110px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px #000;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+    }
+
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-image: url(imagenes//nosotros.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        border: $color4 2px solid;
+
+        .nosotros__titulo-nosotros {
+            color: $color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 110px;
             text-align: center;
             text-transform: uppercase;
             text-shadow: 2px 2px 6px #000;
@@ -923,22 +1130,94 @@ $color4: black;
             }
         }
 
-        &__info-servicios {
-            padding-bottom: 1em;
+
+        .nosotros__info-nosotros {
+            color: $color1;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 6px #000;
+        }
+    }
+
+
+    .oficinas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: auto;
+
+        .oficinas__arg {
+            align-items: center;
+        }
+
+        .titulosofi {
+            margin-top: 10px;
+        }
+
+        .maps {
+            display: flex;
+        }
+    }
+
+
+    .containerServicios {
+        display: flex;
+        flex-direction: column;
+        background-image: url(imagenes//containers.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        width: 100%;
+        height: 50vh;
+
+
+        .containerServicios__titulo-servicios {
+            color: $color1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px #000;
+            margin-top: 100px;
+            animation-duration: 2s;
+            animation-name: aparecer;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+
+        .containerServicios__info-servicios {
+            color: $color1;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 6px #000;
         }
     }
 
     .seccion {
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        background-color: red;
+
 
         .seccion__logistica {
             border-right: black 1px solid;
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 200px;
 
             .title-logistica {
                 color: $color1;
@@ -953,29 +1232,19 @@ $color4: black;
                 animation-duration: 2s;
                 animation-name: aparecer;
 
-                @keyframes aparecer {
-                    0% {
-                        opacity: 0;
-                    }
 
-                    100% {
-                        opacity: 1
-                    }
+                .texto-logistica {
+                    color: rgb(46, 46, 46);
+                    text-align: center;
+                    font-size: 18px;
                 }
             }
-
-            .texto-logistica {
-                color: rgb(46, 46, 46);
-                text-align: center;
-                font-size: 18px;
-            }
-
         }
 
         .seccion__cliente {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
+            border-right: black 1px solid;
+            width: 100%;
+            height: 200px;
 
             .title-cliente {
                 color: $color1;
@@ -989,33 +1258,15 @@ $color4: black;
                 margin-bottom: 20px;
                 animation-duration: 2s;
                 animation-name: aparecer;
+            }
 
-                @keyframes aparecer {
-                    0% {
-                        opacity: 0;
-                    }
-
-                    100% {
-                        opacity: 1
-                    }
-                }
+            .texto-cliente {
+                color: $color1;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 10px;
             }
         }
     }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: auto;
-
-        .titulofooter {
-            margin-top: 10px;
-        }
-
-        .redesFooter {
-            margin-bottom: 10px;
-        }
-    }
 }
-// //Media Querys -- Nosotros -- CIERRE//
