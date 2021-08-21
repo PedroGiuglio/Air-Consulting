@@ -108,34 +108,7 @@ $color4: black;
         }
     }
 }
-
-
 // // Sección Index --- CIERRE//
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    color: $color1;
-    font-weight: bold;
-    background-color: $color4;
-    width: 100%;
-    height: 15vh;
-
-    .titulofooter {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: $color1;
-    }
-
-    .redesFooter {
-        background-color: white;
-    }
-}
-
-
 
 
 // Sección Nosotros --- INICIO//
@@ -254,6 +227,7 @@ $color4: black;
         width: 100%;
         height: 120px;
         margin-bottom: 10px;
+        list-style: none;
 
         .titulosofi {
             color: $color4;
@@ -394,7 +368,6 @@ $color4: black;
     flex-wrap: nowrap;
     justify-content: center;
     border-bottom: $color1 3px solid;
-    // align-items: center;
 
     .container-contacto__contactoTitulo {
         color: white;
@@ -467,7 +440,6 @@ $color4: black;
         text-align: center;
     }
 }
-
 
 //Media Querys -- INICIO//
 

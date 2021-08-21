@@ -103,27 +103,6 @@
   color: gold;
 }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-  font-weight: bold;
-  background-color: black;
-  width: 100%;
-  height: 15vh;
-}
-.footer .titulofooter {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-}
-.footer .redesFooter {
-  background-color: white;
-}
-
 .nosotros {
   display: flex;
   flex-direction: column;
@@ -232,6 +211,7 @@
   width: 100%;
   height: 120px;
   margin-bottom: 10px;
+  list-style: none;
 }
 .oficinas .oficinas__arg .titulosofi {
   color: black;
